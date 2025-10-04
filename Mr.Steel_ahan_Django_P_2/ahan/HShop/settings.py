@@ -20,8 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-9kt(jd4-(-+39b96ibr&b!!%_2&v$t#)s&*4&57l^td2lfi%a$')
-
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -219,7 +218,4 @@ X_FRAME_OPTIONS = 'DENY'
 #STATICFILES_STORAGE = 'storages.backends.s3.S3StaticStorage'
 
 AWS_S3_ENDPOINT_URL = 'https://storage.iran.liara.space'
-AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID')
-AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
-AWS_STORAGE_BUCKET_NAME = os.getenv('AWS_STORAGE_BUCKET_NAME')
 AWS_S3_REGION_NAME = 'ir-east-1'
