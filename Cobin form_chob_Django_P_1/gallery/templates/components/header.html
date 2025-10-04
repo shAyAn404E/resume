@@ -1,0 +1,40 @@
+{% load static %}
+
+<header class="site-header">
+  <div class="container">
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="{% url 'store' %}"> صفحه اصلی </a></li>
+        <li><a href="{% url 'order' %}"> ثبت سفارش </a></li>
+
+        {% if request.resolver_match.view_name == 'store' %}
+            <li class="dropdown">
+              <a>
+                  محصولات ما
+                <span class="arrow">&#9662;</span>
+              </a>
+              <ul class="dropdown-menu">
+                {% for category in categories %}
+                  <li>
+                    <a href="{% url 'category_detail' category.slug %}">{{ category.name }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </li>
+        {% else %}
+            <li>
+                <a href="{% url 'store' %}#products"> بازگشت به محصولات </a>
+            </li>
+        {% endif %}
+
+        <li><a href="{% url 'store' %}#contact"> سوالات متداول </a></li>
+        <li><a href="{% url 'store' %}#call">تماس با ما </a></li>
+      </ul>
+    </nav>
+    <div class="logo">
+      <a href="{% url 'store' %}" class="site-name"> Cabin Form </a>
+    </div>
+
+  </div>
+</header>

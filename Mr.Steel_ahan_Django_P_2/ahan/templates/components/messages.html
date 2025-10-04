@@ -1,0 +1,16 @@
+{% load i18n %}
+{% if messages %}
+  <div class="messages">
+    {% for message in messages %}
+      <div class="message {{ message.tags }}">
+        {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
+          {% trans "خطا: " %}{{ message }}
+        {% elif message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}
+          {% trans "موفق: " %}{{ message }}
+        {% else %}
+          {{ message }}
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}

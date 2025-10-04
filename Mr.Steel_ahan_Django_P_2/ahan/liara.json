@@ -1,0 +1,11 @@
+{
+    "django":{
+        "pythonVersion":3.10
+    },
+    "disks":[
+        {
+            "name": "ahan-disk",
+            "mountTo": "mdeia"
+        }
+    ]
+}

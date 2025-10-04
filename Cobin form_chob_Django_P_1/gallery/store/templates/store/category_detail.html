@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    
+<section class="category-header" style="background-image: url('{{ category.image.url }}');">
+    <h1>{{ category.name }}</h1>
+    <div class="header-buttons">
+        <a href="#work-samples" class="btn">نمونه کارها</a>
+        <a href="#about-section" class="btn">توضیحات کلی</a>
+    </div>
+</section>
+
+ 
+    
+<section class="products-section" id="products">
+    <h2>محصولات</h2>
+    <div class="products-grid">
+        {% for product in products %}
+            <a href="#"
+               class="product-card" 
+               data-img-url="{{ product.image.url }}">
+                {% if product.image %}
+                    <img src="{{ product.image.url }}" alt="{{ product.name }}" class="product-image">
+                {% endif %}
+                <div class="product-title-box">
+                    <h3>{{ product.name }}</h3>
+                </div>
+            </a>
+            {% empty %}
+            <p>محصولی در این دسته‌بندی وجود ندارد.</p>
+        {% endfor %}
+    </div>
+</section>
+
+
+    
+{% if page_obj.has_other_pages %}
+<div class="pagination">
+    <span class="step-links">
+        {% if page_obj.has_previous %}
+            <a href="?page=1" class="page-link">« اولین</a>
+            <a href="?page={{ page_obj.previous_page_number }}" class="page-link">قبلی</a>
+        {% endif %}
+
+        {% for i in page_obj.paginator.page_range %}
+            {% if page_obj.number == i %}
+                <span class="current page-link">{{ i }}</span>
+            {% elif i >= page_obj.number|add:-2 and i <= page_obj.number|add:2 %}
+                <a href="?page={{ i }}" class="page-link">{{ i }}</a>
+            {% endif %}
+        {% endfor %}
+
+        {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}" class="page-link">بعدی</a>
+            <a href="?page={{ page_obj.paginator.num_pages }}" class="page-link">آخرین »</a>
+        {% endif %}
+    </span>
+</div>
+{% endif %}
+
+<hr>
+
+<hr>
+
+<section class="work-samples-section" id="work-samples">
+    <h2>نمونه کارها</h2>
+    <div class="gallery-wrapper">
+        <button id="scroll-left" class="nav-button">
+            <span class="arrow">&#x276F;</span> 
+        </button>
+        <div class="work-samples-grid">
+            {% for sample in work_samples %}
+                <a class="work-sample-item" data-src="{{ sample.image.url }}">
+                    <img src="{{ sample.image.url }}" alt="نمونه کار" class="work-sample-image">
+                </a>
+            {% endfor %}
+        </div>
+         <button id="scroll-right" class="nav-button">
+        <span class="arrow">&#x276E;</span> </button>
+    </div>
+</section>
+    
+    
+<section class="category-description-section" id="about-section">
+    <div class="container">
+        {{ category.content|safe }}
+    </div>
+</section>    
+
+
+{% endblock %}

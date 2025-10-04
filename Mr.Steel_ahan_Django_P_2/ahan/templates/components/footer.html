@@ -1,0 +1,58 @@
+{% load static %}
+{% load static i18n %}
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-header">
+      <div class="footer-title-group">
+        <h2 class="footer-title">{% trans "MS.Steel" %}</h2>
+        <p class="footer-subtitle">{% trans "نازل ترین قیمت با مطلوب ترین شرایط" %}</p>
+        <p class="footer-subtitle">{% trans "مشاوره تخصصی در تمام مراحل پروژه" %}</p>
+      </div>
+      <img src="{% static 'logo/logo.jpg' %}" alt="{% trans 'لوگو شرکت' %}" class="footer-logo">
+    </div>
+  </div>
+
+  <div class="footer-content">
+    <!-- ستون راست: ارتباط با ما -->
+    <div class="footer-column">
+      <h4>{% trans "ارتباط با ما" %}</h4>
+      <a href="tel:09381196484">{% trans "تماس: 09381196484" %}</a>
+      <a href="nghhosein@gmail.com">{% trans "ایمیل: nghhosein@gmail.com" %}</a>
+      <div class="social-icons">
+        <a href="https://t.me/steel_ngh" target="_blank">
+          <img src="{% static 'icon/telegram.png' %}" alt="{% trans 'تلگرام' %}">
+        </a>
+        <a href="https://instagram.com/hosein__naghdi" target="_blank">
+          <img src="{% static 'icon/instagram.png' %}" alt="{% trans 'اینستاگرام' %}">
+        </a>
+        <a href="https://wa.me/989123852472" target="_blank">
+          <img src="{% static 'icon/whatsapp.png' %}" alt=" واتساپ ">
+        </a>
+      </div>
+    </div>
+
+    <!-- ستون وسط: لینک‌های سریع -->
+    <div class="footer-column footer-center">
+      <h4>{% trans "لینک‌های سریع" %}</h4>
+      <a href="/">{% trans "خانه" %}</a>
+      <a href="/order/">{% trans "ثبت سفارش" %}</a>
+    </div>
+
+    <!-- ستون چپ: نماد اعتماد -->
+     {% if trust_symbols %}
+         <div class="footer-column">
+             <p class="trust-caption"> نماد اعتماد الکترونیکی و ساماندهی </p>
+             <div class="trust-logos">
+                 {% for symbol in trust_symbols %}
+                     <img src="{{ symbol.image.url }}" alt="{{ symbol.title }}" class="trust-logo">
+                 {% endfor %}
+             </div>
+         </div>
+     {% endif %}
+  </div>
+
+  <div class="copyright">
+    {% trans "کلیه حقوق این وب‌سایت متعلق به" %} <strong>{% trans "نام شرکت شما" %}</strong> {% trans "می‌باشد © ۲۰۲۵" %}
+  </div>
+</footer>

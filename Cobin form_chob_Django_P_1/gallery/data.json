@@ -1,0 +1,961 @@
+[
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$7XwVt6QbrcFn0LSVIVgFxC$DvheHKryaaffC6UjiqCXvWcI1HqT3hEflnUE08r9bCA=",
+        "last_login": "2025-10-01T14:45:22.313Z",
+        "is_superuser": true,
+        "username": "root",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-09-21T19:06:06.227Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "store.category",
+    "pk": 5,
+    "fields": {
+        "name": "کلاسیک",
+        "slug": "clasic",
+        "image": "category_images/ashpazghone_category.jpg",
+        "content": "<h1>طراحی کلاسیک&nbsp;</h1>"
+    }
+},
+{
+    "model": "store.category",
+    "pk": 6,
+    "fields": {
+        "name": "نئو کلاسیک",
+        "slug": "neo-classic",
+        "image": "category_images/5965065634448525590.jpg",
+        "content": "<h1>نعو کلاسیک&nbsp;</h1>"
+    }
+},
+{
+    "model": "store.category",
+    "pk": 7,
+    "fields": {
+        "name": "ممبران",
+        "slug": "mmbrn",
+        "image": "category_images/membran_2-3---.jpg",
+        "content": "<h1>ممبران</h1>"
+    }
+},
+{
+    "model": "store.category",
+    "pk": 8,
+    "fields": {
+        "name": "انزو",
+        "slug": "nzo",
+        "image": "category_images/enzo_star.jpg",
+        "content": "<h1>انزو</h1>"
+    }
+},
+{
+    "model": "store.category",
+    "pk": 9,
+    "fields": {
+        "name": "مدرن",
+        "slug": "mdrn",
+        "image": "category_images/modern_star.jpg",
+        "content": "<h1>مدرن&nbsp;</h1>"
+    }
+},
+{
+    "model": "store.category",
+    "pk": 10,
+    "fields": {
+        "name": "محصولات جانبی",
+        "slug": "mhsolt-gnb",
+        "image": "category_images/Complementary_Products_star.jpg",
+        "content": "<h1>محصولات جانبی</h1>"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 23,
+    "fields": {
+        "name": "membran 1",
+        "description": "membran 1",
+        "category": 7,
+        "image_url": "",
+        "image": "products_images/membran_2-1.jpg",
+        "is_active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": 24,
+    "fields": {
+        "name": "neo classic 1",
+        "description": "neo classic 1",
+        "category": 6,
+        "image_url": "",
+        "image": "products_images/neo_classc_2-1.jpg",
+        "is_active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": 25,
+    "fields": {
+        "name": "neo classic 2",
+        "description": "neo classic 2",
+        "category": 6,
+        "image_url": "",
+        "image": "products_images/neo_classc_3-7.jpg",
+        "is_active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": 26,
+    "fields": {
+        "name": "classic 1",
+        "description": "classic",
+        "category": 5,
+        "image_url": "",
+        "image": "products_images/classic_4-1.jpg",
+        "is_active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": 27,
+    "fields": {
+        "name": "classic 2",
+        "description": "classic 2",
+        "category": 5,
+        "image_url": "",
+        "image": "products_images/classic_2-2.jpg",
+        "is_active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": 28,
+    "fields": {
+        "name": "classic 3",
+        "description": "classic 3",
+        "category": 5,
+        "image_url": "",
+        "image": "products_images/classic_5-1.jpg",
+        "is_active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": 29,
+    "fields": {
+        "name": "classic 5",
+        "description": "classic 5",
+        "category": 5,
+        "image_url": "",
+        "image": "products_images/classic_6-1_ai_.png",
+        "is_active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": 30,
+    "fields": {
+        "name": "neo classic 3",
+        "description": "neo classic",
+        "category": 6,
+        "image_url": "",
+        "image": "products_images/neo_classic_4-1.jpg",
+        "is_active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": 31,
+    "fields": {
+        "name": "neo classic 4",
+        "description": "neo classic  4",
+        "category": 6,
+        "image_url": "",
+        "image": "products_images/neo_classic_5-1.jpg",
+        "is_active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": 32,
+    "fields": {
+        "name": "neo classic 6",
+        "description": "neo classic 6",
+        "category": 6,
+        "image_url": "",
+        "image": "products_images/neo_classic_6-1.jpg",
+        "is_active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": 33,
+    "fields": {
+        "name": "neo classic 5",
+        "description": "neo classic  5",
+        "category": 6,
+        "image_url": "",
+        "image": "products_images/neo_classic_8-1.jpg",
+        "is_active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": 34,
+    "fields": {
+        "name": "neo classic 7",
+        "description": "neo classic 7",
+        "category": 6,
+        "image_url": "",
+        "image": "products_images/neo_classic_7-1.jpg",
+        "is_active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": 35,
+    "fields": {
+        "name": "neo classic 8",
+        "description": "neo classic 8",
+        "category": 6,
+        "image_url": "",
+        "image": "products_images/neo_classic_9-1.jpg",
+        "is_active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": 36,
+    "fields": {
+        "name": "neo classic 9",
+        "description": "neo classic 9",
+        "category": 6,
+        "image_url": "",
+        "image": "products_images/neo_classic_10-1.jpg",
+        "is_active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": 37,
+    "fields": {
+        "name": "enzo 1",
+        "description": "enzo 1",
+        "category": 8,
+        "image_url": "",
+        "image": "products_images/enzo_2-1.jpg",
+        "is_active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": 38,
+    "fields": {
+        "name": "پروژه کاشانک",
+        "description": "enzo 2",
+        "category": 8,
+        "image_url": "",
+        "image": "products_images/enzo_3-1.jpg",
+        "is_active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": 39,
+    "fields": {
+        "name": "membran 2",
+        "description": "membran 2",
+        "category": 7,
+        "image_url": "",
+        "image": "products_images/membran_star.jpg",
+        "is_active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": 40,
+    "fields": {
+        "name": "modern 1",
+        "description": "modern 1",
+        "category": 9,
+        "image_url": "",
+        "image": "products_images/modern_2-1.jpg",
+        "is_active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": 41,
+    "fields": {
+        "name": "modern 2",
+        "description": "modern 2",
+        "category": 9,
+        "image_url": "",
+        "image": "products_images/modern_3-2.jpg",
+        "is_active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": 42,
+    "fields": {
+        "name": "modern 3",
+        "description": "modern 3",
+        "category": 9,
+        "image_url": "",
+        "image": "products_images/modern_4-1.jpg",
+        "is_active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": 43,
+    "fields": {
+        "name": "modern 4",
+        "description": "modern 4",
+        "category": 9,
+        "image_url": "",
+        "image": "products_images/modern_5-1.jpg",
+        "is_active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": 44,
+    "fields": {
+        "name": "modern 5",
+        "description": "modern 5",
+        "category": 9,
+        "image_url": "",
+        "image": "products_images/modern_6-1.jpg",
+        "is_active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": 45,
+    "fields": {
+        "name": "modern 6",
+        "description": "modern 6",
+        "category": 9,
+        "image_url": "",
+        "image": "products_images/modern_7-1.jpg",
+        "is_active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": 46,
+    "fields": {
+        "name": "modern 7",
+        "description": "modern 7",
+        "category": 9,
+        "image_url": "",
+        "image": "products_images/modern_8-1.jpg",
+        "is_active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": 47,
+    "fields": {
+        "name": "modern  8",
+        "description": "modern 8",
+        "category": 9,
+        "image_url": "",
+        "image": "products_images/modern_9-1.jpg",
+        "is_active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": 48,
+    "fields": {
+        "name": "modern 9",
+        "description": "modern 9",
+        "category": 9,
+        "image_url": "",
+        "image": "products_images/modern_10-1.jpg",
+        "is_active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": 49,
+    "fields": {
+        "name": "Complementary Products 1",
+        "description": "Complementary Products 1",
+        "category": 10,
+        "image_url": "",
+        "image": "products_images/Complementary_Products_2-1.jpg",
+        "is_active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": 50,
+    "fields": {
+        "name": "Complementary Products 2",
+        "description": "Complementary Products 2",
+        "category": 10,
+        "image_url": "",
+        "image": "products_images/enzo_-_Complementary_Products_3-1.jpg",
+        "is_active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": 51,
+    "fields": {
+        "name": "Complementary Products 3",
+        "description": "Complementary Products 3",
+        "category": 10,
+        "image_url": "",
+        "image": "products_images/Complementary_Products_star.jpg",
+        "is_active": true
+    }
+},
+{
+    "model": "store.worksample",
+    "pk": 14,
+    "fields": {
+        "product": 23,
+        "image": "work_samples/2025/09/29/membran_2-4.jpg",
+        "description": ""
+    }
+},
+{
+    "model": "store.worksample",
+    "pk": 15,
+    "fields": {
+        "product": 23,
+        "image": "work_samples/2025/09/29/membran_2-3.jpg",
+        "description": ""
+    }
+},
+{
+    "model": "store.worksample",
+    "pk": 16,
+    "fields": {
+        "product": 24,
+        "image": "work_samples/2025/09/29/neo_classc_2-6.jpg",
+        "description": ""
+    }
+},
+{
+    "model": "store.worksample",
+    "pk": 17,
+    "fields": {
+        "product": 24,
+        "image": "work_samples/2025/09/29/neo_classc_2-5.jpg",
+        "description": ""
+    }
+},
+{
+    "model": "store.worksample",
+    "pk": 18,
+    "fields": {
+        "product": 25,
+        "image": "work_samples/2025/09/29/neo_classc_3-5.jpg",
+        "description": ""
+    }
+},
+{
+    "model": "store.worksample",
+    "pk": 19,
+    "fields": {
+        "product": 25,
+        "image": "work_samples/2025/09/29/neo_classc_3-4.jpg",
+        "description": ""
+    }
+},
+{
+    "model": "store.worksample",
+    "pk": 20,
+    "fields": {
+        "product": 26,
+        "image": "work_samples/2025/09/29/classic_4-2.jpg",
+        "description": ""
+    }
+},
+{
+    "model": "store.worksample",
+    "pk": 21,
+    "fields": {
+        "product": 26,
+        "image": "work_samples/2025/09/29/classic_4-3.jpg",
+        "description": ""
+    }
+},
+{
+    "model": "store.worksample",
+    "pk": 22,
+    "fields": {
+        "product": 27,
+        "image": "work_samples/2025/09/29/classic_3-1_ai.png",
+        "description": ""
+    }
+},
+{
+    "model": "store.worksample",
+    "pk": 23,
+    "fields": {
+        "product": 27,
+        "image": "work_samples/2025/09/29/clasic_2-1.jpg",
+        "description": ""
+    }
+},
+{
+    "model": "store.worksample",
+    "pk": 24,
+    "fields": {
+        "product": 27,
+        "image": "work_samples/2025/09/29/classic_2-3.jpg",
+        "description": ""
+    }
+},
+{
+    "model": "store.worksample",
+    "pk": 25,
+    "fields": {
+        "product": 28,
+        "image": "work_samples/2025/09/29/classic_5-3.jpg",
+        "description": ""
+    }
+},
+{
+    "model": "store.worksample",
+    "pk": 26,
+    "fields": {
+        "product": 28,
+        "image": "work_samples/2025/09/29/classic_5-2.jpg",
+        "description": ""
+    }
+},
+{
+    "model": "store.worksample",
+    "pk": 27,
+    "fields": {
+        "product": 29,
+        "image": "work_samples/2025/09/29/classic_6-2_ai.png",
+        "description": ""
+    }
+},
+{
+    "model": "store.worksample",
+    "pk": 28,
+    "fields": {
+        "product": 30,
+        "image": "work_samples/2025/09/29/neo_classic_4-2.jpg",
+        "description": ""
+    }
+},
+{
+    "model": "store.worksample",
+    "pk": 29,
+    "fields": {
+        "product": 30,
+        "image": "work_samples/2025/09/29/neo_classic_4-3.jpg",
+        "description": ""
+    }
+},
+{
+    "model": "store.worksample",
+    "pk": 30,
+    "fields": {
+        "product": 31,
+        "image": "work_samples/2025/09/29/neo_classic_5-4.jpg",
+        "description": ""
+    }
+},
+{
+    "model": "store.worksample",
+    "pk": 31,
+    "fields": {
+        "product": 31,
+        "image": "work_samples/2025/09/29/neo_classic_5-3.jpg",
+        "description": ""
+    }
+},
+{
+    "model": "store.worksample",
+    "pk": 32,
+    "fields": {
+        "product": 34,
+        "image": "work_samples/2025/09/29/neo_classic_7-2.jpg",
+        "description": ""
+    }
+},
+{
+    "model": "store.worksample",
+    "pk": 33,
+    "fields": {
+        "product": 34,
+        "image": "work_samples/2025/09/29/neo_classic_7-3.jpg",
+        "description": ""
+    }
+},
+{
+    "model": "store.worksample",
+    "pk": 34,
+    "fields": {
+        "product": 36,
+        "image": "work_samples/2025/09/29/neo_classic_10-2.jpg",
+        "description": ""
+    }
+},
+{
+    "model": "store.worksample",
+    "pk": 35,
+    "fields": {
+        "product": 35,
+        "image": "work_samples/2025/09/29/neo_classic_9-2.jpg",
+        "description": ""
+    }
+},
+{
+    "model": "store.worksample",
+    "pk": 36,
+    "fields": {
+        "product": 37,
+        "image": "work_samples/2025/09/29/enzo_2-2.jpg",
+        "description": ""
+    }
+},
+{
+    "model": "store.worksample",
+    "pk": 37,
+    "fields": {
+        "product": 37,
+        "image": "work_samples/2025/09/29/enzo_2-3.jpg",
+        "description": ""
+    }
+},
+{
+    "model": "store.worksample",
+    "pk": 38,
+    "fields": {
+        "product": 38,
+        "image": "work_samples/2025/09/29/enzo_3-2.jpg",
+        "description": ""
+    }
+},
+{
+    "model": "store.worksample",
+    "pk": 39,
+    "fields": {
+        "product": 38,
+        "image": "work_samples/2025/09/29/enzo_3-3.jpg",
+        "description": ""
+    }
+},
+{
+    "model": "store.worksample",
+    "pk": 40,
+    "fields": {
+        "product": 40,
+        "image": "work_samples/2025/09/29/modern_2-2.jpg",
+        "description": ""
+    }
+},
+{
+    "model": "store.worksample",
+    "pk": 41,
+    "fields": {
+        "product": 41,
+        "image": "work_samples/2025/09/29/modern_3-1.jpg",
+        "description": ""
+    }
+},
+{
+    "model": "store.worksample",
+    "pk": 42,
+    "fields": {
+        "product": 40,
+        "image": "work_samples/2025/09/29/modern_2-3.jpg",
+        "description": ""
+    }
+},
+{
+    "model": "store.worksample",
+    "pk": 43,
+    "fields": {
+        "product": 42,
+        "image": "work_samples/2025/09/29/modern_4-2.jpg",
+        "description": ""
+    }
+},
+{
+    "model": "store.worksample",
+    "pk": 44,
+    "fields": {
+        "product": 42,
+        "image": "work_samples/2025/09/29/modern_4-3.jpg",
+        "description": ""
+    }
+},
+{
+    "model": "store.worksample",
+    "pk": 45,
+    "fields": {
+        "product": 43,
+        "image": "work_samples/2025/09/29/modern_5-2.jpg",
+        "description": ""
+    }
+},
+{
+    "model": "store.worksample",
+    "pk": 46,
+    "fields": {
+        "product": 43,
+        "image": "work_samples/2025/09/29/modern_5-3.jpg",
+        "description": ""
+    }
+},
+{
+    "model": "store.worksample",
+    "pk": 47,
+    "fields": {
+        "product": 48,
+        "image": "work_samples/2025/09/29/modern_10-2.jpg",
+        "description": ""
+    }
+},
+{
+    "model": "store.worksample",
+    "pk": 48,
+    "fields": {
+        "product": 48,
+        "image": "work_samples/2025/09/29/modern_10-3.jpg",
+        "description": ""
+    }
+},
+{
+    "model": "store.contactmessage",
+    "pk": 1,
+    "fields": {
+        "full_name": "sdfadad",
+        "email": "root@gmail.com",
+        "phone": "09123438234",
+        "message": "FfFAFADAdADADADA",
+        "created_at": "2025-09-21T19:12:00.264Z"
+    }
+},
+{
+    "model": "store.contactmessage",
+    "pk": 4,
+    "fields": {
+        "full_name": "root",
+        "email": "root@gmail.com",
+        "phone": "09123438234",
+        "message": "134567890-098654321",
+        "created_at": "2025-09-21T20:37:22.379Z"
+    }
+},
+{
+    "model": "store.contactmessage",
+    "pk": 5,
+    "fields": {
+        "full_name": "root",
+        "email": "root@gmail.com",
+        "phone": "09123438234",
+        "message": ";lkgfrdediop[pkjhgfdfghjk",
+        "created_at": "2025-09-27T10:36:17.173Z"
+    }
+},
+{
+    "model": "store.contactmessage",
+    "pk": 6,
+    "fields": {
+        "full_name": "sdfadad",
+        "email": "root@gmail.com",
+        "phone": "09123438234",
+        "message": "134567890-098654321",
+        "created_at": "2025-09-27T11:02:19.689Z"
+    }
+},
+{
+    "model": "store.contactmessage",
+    "pk": 7,
+    "fields": {
+        "full_name": "sdfadad",
+        "email": "root@gmail.com",
+        "phone": "09123438234",
+        "message": "kjhgfdxfgyhuijokpl[;",
+        "created_at": "2025-09-27T12:14:36.261Z"
+    }
+},
+{
+    "model": "store.contactmessage",
+    "pk": 8,
+    "fields": {
+        "full_name": "sdfadad",
+        "email": "root@gmail.com",
+        "phone": "09123438234",
+        "message": "l,mkjhyuiol, mnjk",
+        "created_at": "2025-09-27T13:30:35.284Z"
+    }
+},
+{
+    "model": "store.contactmessage",
+    "pk": 9,
+    "fields": {
+        "full_name": "sdfadad",
+        "email": "root@gmail.com",
+        "phone": "09123438234",
+        "message": "mnbvcxzFAseyrutyiuopoklmnb v",
+        "created_at": "2025-09-27T13:46:38.929Z"
+    }
+},
+{
+    "model": "store.contactmessage",
+    "pk": 10,
+    "fields": {
+        "full_name": "root",
+        "email": "root@gmail.com",
+        "phone": "09123438234",
+        "message": "hfdytdyfutgihojpk[l",
+        "created_at": "2025-10-01T13:09:10.667Z"
+    }
+},
+{
+    "model": "store.message",
+    "pk": 1,
+    "fields": {
+        "name": "شایان ",
+        "message": "zgbsdhaggadha",
+        "is_approved": true,
+        "answer": "بلذر",
+        "created_at": "2025-09-21T19:07:49.511Z"
+    }
+},
+{
+    "model": "store.message",
+    "pk": 2,
+    "fields": {
+        "name": "زاخذ2",
+        "message": "زطرذدرزطز",
+        "is_approved": true,
+        "answer": "1234567876543212456765432345غ",
+        "created_at": "2025-09-27T13:17:21.778Z"
+    }
+},
+{
+    "model": "gallery.galleryimage",
+    "pk": 11,
+    "fields": {
+        "title": "classic",
+        "image": "gallery/classic_star1.jpg",
+        "uploaded_at": "2025-09-29T06:06:02.901Z"
+    }
+},
+{
+    "model": "gallery.galleryimage",
+    "pk": 12,
+    "fields": {
+        "title": "classic",
+        "image": "gallery/classic_star2.jpg",
+        "uploaded_at": "2025-09-29T06:06:13.152Z"
+    }
+},
+{
+    "model": "gallery.galleryimage",
+    "pk": 13,
+    "fields": {
+        "title": "neo classic",
+        "image": "gallery/neo_classc_3-1.jpg",
+        "uploaded_at": "2025-09-29T06:08:32.897Z"
+    }
+},
+{
+    "model": "gallery.galleryimage",
+    "pk": 14,
+    "fields": {
+        "title": "neo classic",
+        "image": "gallery/neo_classc_3-2.jpg",
+        "uploaded_at": "2025-09-29T06:08:45.142Z"
+    }
+},
+{
+    "model": "gallery.galleryimage",
+    "pk": 15,
+    "fields": {
+        "title": "neo classic",
+        "image": "gallery/neo_classc_2-3.jpg",
+        "uploaded_at": "2025-09-29T06:13:10.711Z"
+    }
+},
+{
+    "model": "gallery.galleryimage",
+    "pk": 16,
+    "fields": {
+        "title": "neo classic",
+        "image": "gallery/neo_classc_2-4.jpg",
+        "uploaded_at": "2025-09-29T06:13:21.149Z"
+    }
+},
+{
+    "model": "gallery.galleryimage",
+    "pk": 17,
+    "fields": {
+        "title": "membran",
+        "image": "gallery/membran_2-2.jpg",
+        "uploaded_at": "2025-09-29T06:14:40.172Z"
+    }
+},
+{
+    "model": "gallery.galleryimage",
+    "pk": 18,
+    "fields": {
+        "title": "membran",
+        "image": "gallery/membran_2-1.jpg",
+        "uploaded_at": "2025-09-29T06:14:49.595Z"
+    }
+},
+{
+    "model": "gallery.galleryimage",
+    "pk": 19,
+    "fields": {
+        "title": "enzo",
+        "image": "gallery/enzo_star1.jpg",
+        "uploaded_at": "2025-09-29T16:18:03.898Z"
+    }
+},
+{
+    "model": "gallery.galleryimage",
+    "pk": 20,
+    "fields": {
+        "title": "enzo",
+        "image": "gallery/enzo_star_2.jpg",
+        "uploaded_at": "2025-09-29T16:18:14.616Z"
+    }
+},
+{
+    "model": "gallery.galleryimage",
+    "pk": 21,
+    "fields": {
+        "title": "modern",
+        "image": "gallery/modern_star1.jpg",
+        "uploaded_at": "2025-09-29T16:32:31.434Z"
+    }
+},
+{
+    "model": "gallery.galleryimage",
+    "pk": 22,
+    "fields": {
+        "title": "modern",
+        "image": "gallery/modern_star2.jpg",
+        "uploaded_at": "2025-09-29T16:32:41.997Z"
+    }
+}
+]

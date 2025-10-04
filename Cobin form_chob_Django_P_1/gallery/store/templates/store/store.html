@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="intro">
+  <h1>محصولات ما</h1>
+  <p>تولد و اجرا کننده انواع کابینت هایه مدرن و کلاسیک </p>
+</section>
+    
+<section class="category-grid">
+  {% for category in categories %}
+    <a href="{% url 'category_detail' category.slug %}" class="category-card">
+      <div class="category-background" style="background-image: url('{{ category.image.url }}');"></div>
+      <div class="category-overlay">
+        <h2>{{ category.name }}</h2>
+      </div>
+    </a>
+  {% empty %}
+    <p>هنوز هیچ دسته‌بندی‌ای وجود ندارد.</p>
+  {% endfor %}
+</section>
+    
+<section class="contact-section centered" id="contact">
+  <h2>تماس با ما</h2>
+  <form method="post" action="{% url 'message_create' %}">
+    {% csrf_token %}
+    <div>
+      <label for="name"> نام :</label>
+      <input type="text" name="name" required>
+    </div>
+    <div>
+      <label for="message">متن پیام :</label>
+      <textarea name="message" rows="4" required></textarea>
+    </div>
+    <button type="submit">ارسال پیام</button>
+  </form>
+</section>
+
+<section class="approved-messages" id="feedback">
+  <h2> نظرات کاربران</h2>
+  {% if approved_messages %}
+    {% for msg in approved_messages %}
+      <div class="user-message">
+        <p><strong>{{ msg.name }}</strong> گفت:</p>
+        <blockquote>{{ msg.message }}</blockquote>
+        {% if msg.answer %}
+          <p class="admin-answer">
+            <strong>پاسخ مدیریت:</strong> {{ msg.answer }}
+          </p>
+        {% endif %}
+      </div>
+    {% endfor %}
+  {% else %}
+    <p>هنوز پیامی ثبت نشده است.</p>
+  {% endif %}
+</section>
+
+<section class="work-samples-section" id="home-gallery">
+    <h2>گالری محصولات</h2>
+    <div class="gallery-wrapper">
+        <button id="home-gallery-scroll-left" class="nav-button">
+            <span class="arrow">&#x276F;</span> 
+        </button>
+        <div class="work-samples-grid">
+            {% for image in gallery_images %}
+                <a class="work-sample-item" data-src="{{ image.image.url }}">
+                    <img src="{{ image.image.url }}" alt="تصویر گالری" class="work-sample-image">
+                </a>
+            {% endfor %}
+        </div>
+         <button id="home-gallery-scroll-right" class="nav-button">
+        <span class="arrow">&#x276E;</span> </button>
+    </div>
+</section>
+    
+{% endblock %}

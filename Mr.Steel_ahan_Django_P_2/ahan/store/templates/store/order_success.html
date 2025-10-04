@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+
+{% load static %}
+{% load i18n %}
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% trans "سفارش با موفقیت ثبت شد | فروشگاه آهن و سنگ" %}</title>
+  <meta name="description" content="{% trans 'سفارش شما با موفقیت در فروشگاه ثبت شد. به زودی با شما تماس خواهیم گرفت.' %}">
+  <meta name="robots" content="noindex, follow">
+
+  <!-- داده ساختاریافته Structured Data برای سئو -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Order",
+    "orderStatus": "https://schema.org/OrderProcessing",
+    "seller": {
+      "@type": "Organization",
+      "name": "{% trans 'فروشگاه آهن و سنگ' %}",
+      "url": "https://yourdomain.com"
+    }
+  }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Vazirmatn', sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 80px auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .alert {
+      padding: 15px;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    .alert-success {
+      background-color: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+    }
+
+    a.back-link {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    a.back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    {% if messages %}
+      {% for message in messages %}
+        <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+      {% endfor %}
+    {% else %}
+      <div class="alert alert-success">
+        ✅ {% trans "سفارش شما با موفقیت ثبت شد." %}
+      </div>
+    {% endif %}
+
+    <a href="{% url 'store' %}" class="back-link">{% trans "بازگشت به صفحه فروشگاه" %}</a>
+  </div>
+</body>
+</html>

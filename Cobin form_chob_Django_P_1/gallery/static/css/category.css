@@ -1,0 +1,483 @@
+/* استایل‌های پایه برای صفحه جزئیات دسته‌بندی */
+body {
+    font-family: "Vazirmatn", sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    direction: rtl;
+    line-height: 1.6;
+    margin: 0;
+     padding: 0;
+}
+
+.padi {
+    padding: 0 1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* بخش هدر دسته‌بندی با تصویر پس‌زمینه */
+.category-header {
+    height: 350px; /* ارتفاع دلخواه */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #dddddd; /* برای خوانایی متن روی تصویر */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-bottom: 3rem;
+    overflow: hidden;
+}
+
+/* افکت هاور روی هدر */
+.category-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: background-color 0.4s ease;
+    z-index: 0;
+}
+
+.category-header:hover::before {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.category-header h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    z-index: 1;
+}
+
+/* استایل و مخفی کردن دکمه‌ها در هدر */
+.header-buttons {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    display: flex;
+    gap: 1rem;
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* نمایش دکمه‌ها در حالت هاور */
+.category-header:hover .header-buttons {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* بخش محصولات و نمونه کارها */
+.products-section {
+    padding: 0 1.5rem;
+}
+
+.products-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #eae9e9;
+    margin-bottom: 2rem;
+}
+
+/* طرح شبکه‌ای برای محصولات و نمونه کارها */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    justify-content: center;
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* استایل باکس‌های محصول */
+.product-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    text-decoration: none;
+    display: block;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.product-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.product-title-box {
+    text-align: center;
+    padding: 1rem;
+     background-color: rgba(255, 255, 255, 0.08); /* مشکی با شفافیت 60% */
+    color: #d5d5d5;
+}
+
+.product-title-box h3 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+
+/* استایل بخش نمونه کارها */
+.work-samples-section {
+    padding: 0 0 2rem ;
+}
+
+.work-samples-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #c1c1c1;
+    margin-bottom: 2rem;
+}
+
+/* باکس والد برای گالری و دکمه‌ها */
+.gallery-wrapper {
+    position: relative;
+    max-width: 1300px; /* حداکثر عرض دلخواه */
+    margin: 0 auto;
+}
+
+/* طرح اسکرولی گالری */
+.work-samples-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* پنهان کردن نوار اسکرول */
+.work-samples-grid::-webkit-scrollbar {
+    display: none;
+}
+
+/* استایل هر آیتم نمونه کار */
+.work-sample-item {
+    /* 500px برای نمایش 2 تا 3 عکس در یک ردیف مناسب است. */
+    width: 305px;
+    height: 350px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.work-sample-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.work-sample-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* استایل دکمه‌های پیمایش */
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#scroll-left {
+    left: 10px;
+}
+
+#scroll-right {
+    right: 10px;
+}
+
+
+.arrow {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+
+/* استایل برای لایت‌باکس */
+.lightbox {
+    position: fixed; /* در جای ثابت در بالای صفحه می‌ماند */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* پس‌زمینه نیمه‌شفاف */
+    display: none; /* به صورت پیش‌فرض مخفی است */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* مطمئن می‌شویم که در بالای همه عناصر قرار گیرد */
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    animation-name: zoom;
+    animation-duration: 0.6s;
+    cursor: pointer; /* برای اینکه کاربر بفهمد می‌تواند با کلیک آن را ببندد */
+}
+
+
+/* Styling for pagination links */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    font-family: inherit;
+    direction: ltr; /* Ensure correct text direction for numbers */
+}
+
+.step-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.page-link {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #444;
+    padding: 12px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: bold;
+
+}
+
+.page-link:hover {
+    background-color: #444;
+}
+
+.page-link.current {
+ /*   background-color: #A3D89D;*/ /* Light green color */
+    background-color: #333; /* مشکی با شفافیت 60% */
+    color: #fff;
+    border: black 5px;
+    box-shadow:1.5px 1.5px #5c5c5c;
+/*    border-color: #A3D89D;*/
+}
+
+
+
+/* بخش توضیحات کلی کتگوری */
+.category-description-section {
+    padding: 10px 0; /* فاصله از بالا و پایین */
+    /* **مقدار شفافیت (Alpha) به 0.1 تغییر کرد** */
+    background: rgba(0, 0, 0, 0.4); /* پس‌زمینه مشکی با شفافیت 0.1 (یک دهم) */
+    color: #fff; /* رنگ متن اصلی سفید */
+    width: 85%;
+    margin: 20px auto 20px;
+    border-radius: 3rem;
+}
+
+/* برای اینکه محتوای متنی (H2, P و...) خوانا بماند، بهتر است استایل‌های زیر را حفظ کنید: */
+
+/* سرتیترهای اصلی (H2) */
+.category-description-section h2 {
+    color: #dadada; /* طلایی (رنگ لوگو و هدر شما) */
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-align: right;
+}
+
+/* پاراگراف‌های متنی */
+.category-description-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2px;
+    text-align: justify;
+    color: #E0E0E0; /* کمی سفیدتر از پس زمینه */
+}
+
+
+@media (max-width: 768px) {
+    .category-header {
+        height: 250px;
+    }
+
+    .category-header h1 {
+        font-size: 2rem;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr); /* دو ستونه */
+        gap: 1rem;
+        width: 95%;
+    }
+
+    .product-image {
+        height: 200px;
+    }
+
+    .product-title-box h3 {
+        font-size: 1rem;
+    }
+
+    .work-samples-grid {
+        gap: 1rem;
+    }
+
+    .work-sample-item {
+        width: 180px;
+        height: 280px;
+    }
+
+    .category-description-section {
+        width: 95%;
+        padding: 1rem;
+        border-radius: 1.5rem;
+    }
+
+    .category-description-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .category-description-section p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .category-header {
+        height: 200px;
+    }
+
+    .category-header h1 {
+        font-size: 1.6rem;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr; /* تک ستونه */
+        gap: 0.8rem;
+        width: 100%;
+    }
+
+    .product-image {
+        height: 180px;
+    }
+
+    .product-title-box {
+        padding: 0.7rem;
+    }
+
+    .product-title-box h3 {
+        font-size: 0.95rem;
+    }
+
+    .work-sample-item {
+        width: 150px;
+        height: 230px;
+    }
+
+    .category-description-section {
+        width: 100%;
+        padding: 0.8rem;
+        border-radius: 1rem;
+    }
+
+    .category-description-section h2 {
+        font-size: 1.3rem;
+    }
+
+    .category-description-section p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .pagination {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .page-link {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* پس‌زمینه تیره */
+    display: none; /* حتماً باید به صورت پیش‌فرض مخفی باشد */
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    cursor: pointer;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+.lightbox-content {
+    transition: transform 0.3s ease;
+}
+.lightbox.show .lightbox-content {
+    transform: scale(1.05);
+}
+
+/* انیمیشن زوم */
+@keyframes zoom {
+    from {transform: scale(0.1)}
+    to {transform: scale(1)}
+}

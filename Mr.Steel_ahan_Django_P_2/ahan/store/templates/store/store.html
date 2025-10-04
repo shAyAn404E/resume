@@ -1,0 +1,133 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block content %}
+<section class="intro">
+  <h1>{% trans "محصولات ما" %}</h1>
+  <p>{% trans "خرید انواع آهن‌آلات، سنگ و مصالح ساختمانی با بهترین قیمت" %}</p>
+</section>
+
+{% for category in categories %}
+  <section class="category-section" id="products">
+    <h2 class="category-title">{{ category.name }}</h2>
+    <div class="products-grid">
+      {% for product in category.products %}
+        <div class="product-card" onclick="toggleDetails(this)">
+          {% if product.image %}
+            <img src="{{ product.image.url }}" alt="{{ product.name_fa }}">
+          {% elif product.image_url %}
+            <img src="{{ product.image_url }}" alt="{{ product.name_fa }}">
+          {% else %}
+            <img src="{% static 'images/no-image.png' %}" alt="{% trans 'تصویری موجود نیست' %}">
+          {% endif %}
+
+          <h3>
+            {% if LANGUAGE_CODE == 'fa' %}
+              {{ product.name_fa }}
+            {% elif LANGUAGE_CODE == 'ar' %}
+              {{ product.name_ar }}
+            {% elif LANGUAGE_CODE == 'en' %}
+              {{ product.name_en }}
+            {% else %}
+              {{ product.name_fa }}
+            {% endif %}
+          </h3>
+
+          <div class="product-details">
+            <p class="short-desc">
+              {% if LANGUAGE_CODE == 'fa' %}
+                {{ product.description_fa|truncatechars:80 }}
+              {% elif LANGUAGE_CODE == 'ar' %}
+                {{ product.description_ar|truncatechars:80 }}
+              {% elif LANGUAGE_CODE == 'en' %}
+                {{ product.description_en|truncatechars:80 }}
+              {% else %}
+                {{ product.description_fa|truncatechars:80 }}
+              {% endif %}
+            </p>
+            <p>
+              <strong>{% trans "موجودی:" %}</strong>
+              {% if LANGUAGE_CODE == 'fa' %}
+                {{ product.available_fa }}
+              {% elif LANGUAGE_CODE == 'ar' %}
+                {{ product.available_ar }}
+              {% elif LANGUAGE_CODE == 'en' %}
+                {{ product.available_en }}
+              {% else %}
+                {{ product.available_fa }}
+              {% endif %}
+            </p>
+            <p>
+              <strong>{% trans "قیمت:" %}</strong>
+              {% if LANGUAGE_CODE == 'fa' %}
+                {{ product.price_fa }}
+              {% elif LANGUAGE_CODE == 'ar' %}
+                {{ product.price_ar }}
+              {% elif LANGUAGE_CODE == 'en' %}
+                {{ product.price_en }}
+              {% else %}
+                {{ product.price_fa }}
+              {% endif %}
+            </p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+{% endfor %}
+
+<section class="contact-section centered" id="contact">
+  <h2>{% trans "تماس با ما" %}</h2>
+  <form method="post" action="{% url 'message_create' %}">
+    {% csrf_token %}
+    <div>
+      <label for="name">{% trans "نام" %}</label>
+      <input type="text" name="name" required>
+    </div>
+    <div>
+      <label for="message">{% trans "پیام" %}</label>
+      <textarea name="message" rows="4" required></textarea>
+    </div>
+    <button type="submit">{% trans "ارسال پیام" %}</button>
+  </form>
+</section>
+
+<section class="approved-messages" id="feedback">
+  <h2>{% trans "نظرات کاربران" %}</h2>
+  {% if approved_messages %}
+    {% for msg in approved_messages %}
+      <div class="user-message">
+        <p><strong>{{ msg.name }}</strong> {% trans "گفت:" %}</p>
+        <blockquote>{{ msg.message }}</blockquote>
+        {% if msg.answer %}
+          <p class="admin-answer">
+            <strong>{% trans "پاسخ مدیریت:" %}</strong> {{ msg.answer }}
+          </p>
+        {% endif %}
+      </div>
+    {% endfor %}
+  {% else %}
+    <p>{% trans "هنوز پیامی ثبت نشده است." %}</p>
+  {% endif %}
+</section>
+
+<section class="work-samples-section" id="home-gallery">
+    <h2>گالری محصولات</h2>
+    <div class="gallery-wrapper">
+        <button id="home-gallery-scroll-left" class="nav-button">
+            <span class="arrow">&#x276F;</span> 
+        </button>
+        <div class="work-samples-grid">
+            {% for image in gallery_images %}
+                <a class="work-sample-item" data-src="{{ image.image.url }}">
+                    <img src="{{ image.image.url }}" alt="تصویر گالری" class="work-sample-image">
+                </a>
+            {% endfor %}
+        </div>
+         <button id="home-gallery-scroll-right" class="nav-button">
+        <span class="arrow">&#x276E;</span> </button>
+    </div>
+</section>
+
+{% endblock %}

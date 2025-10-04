@@ -1,0 +1,65 @@
+.order-form-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #2c3e50;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  direction: rtl;
+  font-family: Tahoma, sans-serif;
+  color: white;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.form-subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: darkgray;
+  margin-bottom: 25px;
+}
+
+form p {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: #fefefe;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.submit-button:hover {
+  background-color: #004c99;
+}

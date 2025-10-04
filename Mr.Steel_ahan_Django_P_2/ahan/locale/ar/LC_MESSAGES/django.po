@@ -1,0 +1,204 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: HShop\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-23 00:18+0330\n"
+"PO-Revision-Date: 2025-07-23 00:30+0330\n"
+"Last-Translator: hosein <nghhoseim@gmail.com>\n"
+"Language-Team: Arabic <LL@li.org>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+
+
+#: .\HShop\settings.py:58
+msgid "Persian"
+msgstr "فارسی"
+
+#: .\HShop\settings.py:59
+msgid "English"
+msgstr "انگلیسی"
+
+#: .\HShop\settings.py:60
+msgid "Arabic"
+msgstr "عربی"
+
+########################
+#header
+
+msgid "نمایش محصولات"
+msgstr "عرض المنتجات"
+
+msgid "فروشگاه آهن آلات"
+msgstr "متجر الحديد"
+
+#foter
+
+
+msgid "نازل ترین قیمت با مطلوب ترین شرایط"
+msgstr "أنسب الأسعار وبأفضل الشروط"
+
+msgid "مشاوره تخصصی در تمام مراحل پروژه"
+msgstr " استشارات متخصصة في جميع مراحل المشروع"
+
+msgid "ارتباط با ما"
+msgstr "اتصل بنا"
+
+msgid "تماس: 09381196484"
+msgstr "الهاتف: 09381196484"
+
+msgid "ایمیل: nghhosein@gmail.com"
+msgstr "البريد الإلكتروني: nghhosein@gmail.com"
+
+msgid "لینک‌های سریع"
+msgstr "روابط سريعة"
+
+msgid "خانه"
+msgstr "الصفحة الرئيسية"
+
+msgid "ثبت سفارش"
+msgstr "تقديم طلب"
+
+msgid "نماد اعتماد الکترونیکی و ساماندهی"
+msgstr "رموز الثقة الإلكترونية"
+
+msgid "کلیه حقوق این وب‌سایت متعلق به"
+msgstr "جميع الحقوق محفوظة لـ"
+
+msgid "می‌باشد © ۲۰۲۵"
+msgstr "© ٢٠٢٥"
+
+#messages
+
+msgid "خطا: "
+msgstr "خطأ: "
+
+msgid "موفق: "
+msgstr "ناجح: "
+
+# erorr 401
+
+msgid "عدم احراز هویت - ۴۰۱"
+msgstr "غير مصرح - 401"
+
+msgid "۴۰۱ - عدم احراز هویت"
+msgstr "401 - غير مصرح"
+
+msgid "برای مشاهده این صفحه باید وارد شوید."
+msgstr "يجب تسجيل الدخول لعرض هذه الصفحة."
+
+msgid "بازگشت به خانه"
+msgstr "العودة إلى الصفحة الرئيسية"
+
+# erorr 403
+
+msgid "دسترسی غیرمجاز - ۴۰۳"
+msgstr "الوصول مرفوض - 403"
+
+msgid "۴۰۳ - دسترسی غیرمجاز"
+msgstr "403 - الوصول مرفوض"
+
+msgid "شما اجازه دسترسی به این صفحه را ندارید."
+msgstr "ليس لديك إذن للوصول إلى هذه الصفحة."
+
+# erorr 404
+
+msgid "صفحه مورد نظر پیدا نشد - خطای ۴۰۴"
+msgstr "الصفحة غير موجودة - خطأ 404"
+
+msgid "۴۰۴ - صفحه پیدا نشد"
+msgstr "404 - الصفحة غير موجودة"
+
+msgid "متاسفیم، صفحه‌ای که دنبالش بودید پیدا نشد."
+msgstr "عذرًا، لم يتم العثور على الصفحة التي تبحث عنها."
+
+msgid "بازگشت به صفحه اصلی"
+msgstr "العودة إلى الصفحة الرئيسية"
+
+# erorr 500
+
+msgid "خطای داخلی سرور - ۵۰۰"
+msgstr "خطأ داخلي في الخادم - ٥٠٠"
+
+msgid "۵۰۰ - خطای سرور"
+msgstr "٥٠٠ - خطأ في الخادم"
+
+msgid "مشکلی در سرور رخ داده است. لطفاً بعداً دوباره تلاش کنید."
+msgstr "حدثت مشكلة في الخادم. يرجى المحاولة لاحقًا."
+
+#base
+#non
+
+# order_success
+
+msgid "سفارش با موفقیت ثبت شد | فروشگاه آهن و سنگ"
+msgstr "تم إرسال الطلب بنجاح | متجر الحديد والحجر"
+
+msgid "سفارش شما با موفقیت در فروشگاه ثبت شد. به زودی با شما تماس خواهیم گرفت."
+msgstr "تم إرسال طلبك بنجاح. سنتواصل معك قريباً."
+
+msgid "فروشگاه آهن و سنگ"
+msgstr "متجر الحديد والحجر"
+
+msgid "سفارش شما با موفقیت ثبت شد."
+msgstr "تم إرسال طلبك بنجاح."
+
+msgid "بازگشت به صفحه فروشگاه"
+msgstr "العودة إلى صفحة المتجر"
+
+#order
+
+msgid "ثبت سفارش مصالح ساختمانی"
+msgstr "طلب مواد البناء"
+
+msgid "فرم ثبت سفارش"
+msgstr "نموذج الطلب"
+
+msgid "لطفاً اطلاعات لازم را وارد کنید. تیم ما در سریع‌ترین زمان ممکن با شما تماس می‌گیرد."
+msgstr "يرجى إدخال المعلومات المطلوبة. سيتصل بك فريقنا في أقرب وقت ممكن."
+
+#store
+
+msgid "محصولات ما"
+msgstr "منتجاتنا"
+
+msgid "خرید انواع آهن‌آلات، سنگ و مصالح ساختمانی با بهترین قیمت"
+msgstr "اشترِ أنواع المعادن والحجارة ومواد البناء بأفضل الأسعار"
+
+msgid "موجودی"
+msgstr "المتوفر"
+
+msgid "قیمت"
+msgstr "السعر"
+
+msgid "تماس با ما"
+msgstr "اتصل بنا"
+
+msgid "نام"
+msgstr "الاسم"
+
+msgid "پیام"
+msgstr "الرسالة"
+
+msgid "ارسال پیام"
+msgstr "أرسل الرسالة"
+
+msgid "نظرات کاربران"
+msgstr "تعليقات المستخدمين"
+
+msgid "هنوز پیامی ثبت نشده است."
+msgstr "لم يتم نشر أي رسائل بعد."
+
+msgid "پاسخ مدیریت"
+msgstr "رد الإدارة"
+
+msgid "گفت:"
+msgstr "قال:"

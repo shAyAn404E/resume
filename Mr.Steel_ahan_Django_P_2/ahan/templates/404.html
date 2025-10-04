@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{% trans "صفحه مورد نظر پیدا نشد - خطای ۴۰۴" %}{% endblock %}
+
+{% block content %}
+<section class="error-section">
+  <div class="container">
+    <h1>{% trans "۴۰۴ - صفحه پیدا نشد" %}</h1>
+    <p>{% trans "متاسفیم، صفحه‌ای که دنبالش بودید پیدا نشد." %}</p>
+    <a href="/" class="btn">{% trans "بازگشت به صفحه اصلی" %}</a>
+  </div>
+</section>
+{% endblock %}

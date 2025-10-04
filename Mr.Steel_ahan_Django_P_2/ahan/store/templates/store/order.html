@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+
+{% block title %}{% trans "ثبت سفارش مصالح ساختمانی" %} | {{ site_name }}{% endblock %}
+
+{% block content %}
+<div class="order-form-container">
+  <h1 class="form-title">{% trans "فرم ثبت سفارش" %}</h1>
+  <p class="form-subtitle">
+    {% trans "لطفاً اطلاعات لازم را وارد کنید. تیم ما در سریع‌ترین زمان ممکن با شما تماس می‌گیرد." %}
+  </p>
+
+  <form method="post" novalidate>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="submit-button">{% trans "ثبت سفارش" %}</button>
+  </form>
+</div>
+{% endblock %}

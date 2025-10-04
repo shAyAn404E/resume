@@ -1,0 +1,391 @@
+/* پایه */
+body {
+  font-family: "Vazirmatn", sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* معرفی */
+.intro {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  color: #555;
+  line-height: 1.7;
+}
+
+/* دسته‌بندی */
+.category-section {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.category-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0056b3;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+/* محصولات */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 10px));
+  gap: 1.5rem;
+  justify-items: center;
+  justify-content: center;
+  padding-top: 0.3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  max-width: 150px;
+  border-radius: 8px;
+  padding: 0.5rem;
+  text-align: center;
+  transition: all 0.4s ease;
+  position: relative;
+  align-self: start;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  margin-bottom: 0.1rem;
+  border-radius: 6px;
+}
+
+.product-card h3 {
+  font-size: 1rem;
+  margin-bottom: 1px;
+  color: #222;
+}
+
+.short-desc {
+  font-size: 0.7rem;
+  color: #444;
+  padding-right: 0.7rem;
+  margin: 8px 0;
+}
+
+/* وسط‌چین کردن عنوان دسته‌بندی */
+.category-title {
+  text-align: center;
+}
+
+/* جزئیات بیشتر */
+.product-details {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 1.5s ease, opacity 2s ease,transform 3s ease, box-shadow 2s ease;
+  font-size: 0.7rem;
+  background-color: #eef1f5;
+  padding: 0.7rem;
+  border-radius: 5px;
+  margin-top: 0;
+  text-align: right;
+  color: #444;
+}
+
+.product-card.expanded {
+  padding: 0.7rem;
+  margin-top: 1rem ;
+  transform: scale(1.2);
+  z-index: 10;
+  grid-column: span 1.5;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.product-card.expanded .product-details {
+  max-height: 200px;
+  opacity: 1;
+  padding: 0.2rem 0.0rem;
+  margin-top: 0.3rem;
+}
+
+/* دکمه جزئیات */
+.expand-btn {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #0080ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.expand-btn:hover {
+  background-color: #005ecb;
+}
+
+/* فرم تماس */
+.contact-section {
+  padding: 2rem;
+  background-color: #e3f2fd;
+  border-radius: 30px;
+  max-width: 90%;
+  margin: 1.5rem auto 0 auto;
+}
+
+.contact-section h2 {
+  margin-bottom: 1rem;
+}
+
+.contact-section form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+/* وسط‌چین کردن تایتل تماس با ما */
+.contact-section.centered {
+  text-align: center;
+}
+
+
+.contact-section form div {
+  margin-bottom: 1rem;
+}
+
+.contact-section label {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.contact-section input,
+.contact-section textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.contact-section button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-section button:hover {
+  background-color: #218838;
+}
+
+
+
+.approved-messages {
+  background: #f7f7f7;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+}
+
+.user-message {
+  background-color: #fff;
+  padding-right: 0.5rem;
+  padding-top: 0.1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.user-message blockquote {
+  border-left: 4px solid #3a3a3a;
+  padding: 10px;
+  margin: 10px 0;
+  font-style: italic;
+}
+
+.admin-answer {
+  background-color: #eef7ff;
+  padding: 8px 10px;
+  border-radius: 5px;
+  margin-top: 8px;
+  color: #0070c0;
+}
+
+
+
+/* --- گالری (احتمالاً در HTML سایت چوب وجود دارد) --- */
+.work-samples-section {
+    padding: 0 0 2rem ;
+}
+
+.work-samples-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+/* باکس والد برای گالری و دکمه‌ها */
+.gallery-wrapper {
+    position: relative;
+    max-width: 1300px; /* حداکثر عرض دلخواه */
+    margin: 0 auto;
+}
+
+/* طرح اسکرولی گالری */
+.work-samples-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* پنهان کردن نوار اسکرول */
+.work-samples-grid::-webkit-scrollbar {
+    display: none;
+}
+
+/* استایل هر آیتم نمونه کار */
+.work-sample-item {
+    /* 500px برای نمایش 2 تا 3 عکس در یک ردیف مناسب است. */
+    width: 305px;
+    height: 350px;
+
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.work-sample-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.work-sample-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* استایل دکمه‌های پیمایش */
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#scroll-left {
+    left: 10px;
+}
+
+#scroll-right {
+    right: 10px;
+}
+
+
+.arrow {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* موقعیت‌دهی دکمه‌ها */
+#home-gallery-scroll-left {
+    left: 0; /* دکمه راست‌گرد به سمت چپ کانتینر */
+}
+
+#home-gallery-scroll-right {
+    right: 0; /* دکمه چپ‌گرد به سمت راست کانتینر */
+}
+
+
+/* --- استایل‌های لایت‌باکس (Lightbox) --- */
+.lightbox-modal {
+    display: none; /* پیش‌فرض: مخفی */
+    position: fixed;
+    z-index: 9999; /* بالاتر از همه چیز */
+    padding-top: 20px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9); /* پس‌زمینه تیره */
+    justify-content: center; /* برای وسط‌چین کردن تصویر */
+    align-items: center;
+    cursor: pointer;
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    width: 90%;
+    max-width: 900px;
+    max-height: 90vh; /* ارتفاع بیش از حد بزرگ نشود */
+    animation-name: zoom;
+    animation-duration: 0.6s;
+    pointer-events: none; /* برای اینکه کلیک روی تصویر آن را نبندد */
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.lightbox-close:hover,
+.lightbox-close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* انیمیشن زوم */
+@keyframes zoom {
+    from {transform: scale(0.1)}
+    to {transform: scale(1)}
+}

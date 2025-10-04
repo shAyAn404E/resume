@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- متا تگ‌های سئو -->
+  <meta name="description" content="فروش انواع مصالح ساختمانی نقدی با بهترین قیمت و کیفیت. تماس بگیرید.">
+  <meta name="keywords" content="مصالح ساختمانی, خرید آهن, سنگ ساختمانی, فروش مصالح نقدی">
+  <meta name="robots" content="index, follow">
+
+  <title>{% block title %}Cabin Form{% endblock %}</title>
+
+
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}?v=7">
+  <link rel="stylesheet" href="{% static 'css/error.css' %}?v=5">
+  <link rel="stylesheet" href="{% static 'css/order.css' %}?v=6">
+  <link rel="stylesheet" href="{% static 'css/store.css' %}?v=8">
+  <link rel="stylesheet" href="{% static 'css/category.css' %}?v=6">
+
+  <script src="{% static 'js/store.js' %}"></script>
+  <script src="{% static 'js/gallery.js' %}?v=7"></script>
+  <script src="{% static 'js/product-lightbox.js' %}"></script>
+
+
+
+</head>
+
+<body>
+
+   <div class="parallax-bg"></div>
+
+   <div class="content">
+
+  {% include 'components/header.html' %}
+
+  <!-- پیام‌ها -->
+  {% include 'components/messages.html' %}
+
+  <!-- محتوای اصلی -->
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
+
+  {% include 'components/footer.html' %}
+
+  </div>
+
+<!-- Lightbox (سراسری) -->
+<div id="lightbox" class="lightbox">
+    <img id="lightbox-image" class="lightbox-content" src="" alt="Product preview">
+</div>
+
+</body>
+</html>

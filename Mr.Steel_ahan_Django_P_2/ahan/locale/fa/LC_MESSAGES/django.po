@@ -1,0 +1,198 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: HShop\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-23 00:18+0330\n"
+"PO-Revision-Date: 2025-07-23 00:30+0330\n"
+"Last-Translator: hosein <nghhoseim@gmail.com>\n"
+"Language-Team: Persian <LL@li.org>\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);"
+
+
+#: .\HShop\settings.py:58
+msgid "Persian"
+msgstr "فارسی"
+
+
+#header
+
+#: .\templates\components\header.html:9
+msgid "خانه"
+msgstr "خانه"
+
+#: .\templates\components\header.html:10
+msgid "ثبت سفارش"
+msgstr "ثبت سفارش"
+
+#: .\templates\components\header.html:11
+msgid "نمایش محصولات"
+msgstr "نمایش محصولات"
+
+#: .\templates\components\header.html:12
+msgid "تماس با ما"
+msgstr "تماس با ما"
+
+#: .\templates\components\header.html:16
+msgid "فروشگاه آهن آلات"
+msgstr "فروشگاه آهن آلات"
+
+# foter
+
+msgid "نازل ترین قیمت با مطلوب ترین شرایط"
+msgstr "نازل ترین قیمت با مطلوب ترین شرایط"
+
+msgid "مشاوره تخصصی در تمام مراحل پروژه"
+msgstr "مشاوره تخصصی در تمام مراحل پروژه"
+
+msgid "ارتباط با ما"
+msgstr "ارتباط با ما"
+
+msgid "تماس: 09381196484"
+msgstr "تماس: 09381196484"
+
+msgid "ایمیل: nghhosein@gmail.com"
+msgstr "ایمیل: nghhosein@gmail.com"
+
+msgid "لینک‌های سریع"
+msgstr "لینک‌های سریع"
+
+msgid "نماد اعتماد الکترونیکی و ساماندهی"
+msgstr "نماد اعتماد الکترونیکی و ساماندهی"
+
+msgid "کلیه حقوق این وب‌سایت متعلق به"
+msgstr "کلیه حقوق این وب‌سایت متعلق به"
+
+msgid "می‌باشد © ۲۰۲۵"
+msgstr "می‌باشد © ۲۰۲۵"
+
+#messages
+
+msgid "خطا: "
+msgstr "خطا: "
+
+msgid "موفق: "
+msgstr "موفق: "
+
+msgid "سفارش شما با موفقیت ثبت شد.: "
+msgstr "سفارش شما با موفقیت ثبت شد.: "
+
+
+# erorr 401
+
+msgid "عدم احراز هویت - ۴۰۱"
+msgstr "عدم احراز هویت - ۴۰۱"
+
+msgid "۴۰۱ - عدم احراز هویت"
+msgstr "۴۰۱ - عدم احراز هویت"
+
+msgid "برای مشاهده این صفحه باید وارد شوید."
+msgstr "برای مشاهده این صفحه باید وارد شوید."
+
+msgid "بازگشت به خانه"
+msgstr "بازگشت به خانه"
+
+# erorr 403
+
+msgid "دسترسی غیرمجاز - ۴۰۳"
+msgstr "دسترسی غیرمجاز - ۴۰۳"
+
+msgid "۴۰۳ - دسترسی غیرمجاز"
+msgstr "۴۰۳ - دسترسی غیرمجاز"
+
+msgid "شما اجازه دسترسی به این صفحه را ندارید."
+msgstr "شما اجازه دسترسی به این صفحه را ندارید."
+
+msgid "بازگشت به صفحه اصلی"
+msgstr "بازگشت به صفحه اصلی"
+
+# erorr 404
+
+msgid "صفحه مورد نظر پیدا نشد - خطای ۴۰۴"
+msgstr "صفحه مورد نظر پیدا نشد - خطای ۴۰۴"
+
+msgid "۴۰۴ - صفحه پیدا نشد"
+msgstr "۴۰۴ - صفحه پیدا نشد"
+
+msgid "متاسفیم، صفحه‌ای که دنبالش بودید پیدا نشد."
+msgstr "متاسفیم، صفحه‌ای که دنبالش بودید پیدا نشد."
+
+# erorr 500
+
+msgid "خطای داخلی سرور - ۵۰۰"
+msgstr "خطای داخلی سرور - ۵۰۰"
+
+msgid "۵۰۰ - خطای سرور"
+msgstr "۵۰۰ - خطای سرور"
+
+msgid "مشکلی در سرور رخ داده است. لطفاً بعداً دوباره تلاش کنید."
+msgstr "مشکلی در سرور رخ داده است. لطفاً بعداً دوباره تلاش کنید."
+
+#base
+#non
+
+# order_success
+
+msgid "سفارش با موفقیت ثبت شد | فروشگاه آهن و سنگ"
+msgstr "سفارش با موفقیت ثبت شد | فروشگاه آهن و سنگ"
+
+msgid "سفارش شما با موفقیت در فروشگاه ثبت شد. به زودی با شما تماس خواهیم گرفت."
+msgstr "سفارش شما با موفقیت در فروشگاه ثبت شد. به زودی با شما تماس خواهیم گرفت."
+
+msgid "فروشگاه آهن و سنگ"
+msgstr "فروشگاه آهن و سنگ"
+
+msgid "سفارش شما با موفقیت ثبت شد."
+msgstr "سفارش شما با موفقیت ثبت شد."
+
+msgid "بازگشت به صفحه فروشگاه"
+msgstr "بازگشت به صفحه فروشگاه"
+
+#order
+
+msgid "ثبت سفارش مصالح ساختمانی"
+msgstr "ثبت سفارش مصالح ساختمانی"
+
+msgid "فرم ثبت سفارش"
+msgstr "فرم ثبت سفارش"
+
+msgid "لطفاً اطلاعات لازم را وارد کنید. تیم ما در سریع‌ترین زمان ممکن با شما تماس می‌گیرد."
+msgstr "لطفاً اطلاعات لازم را وارد کنید. تیم ما در سریع‌ترین زمان ممکن با شما تماس می‌گیرد."
+
+#store
+
+msgid "محصولات ما"
+msgstr "محصولات ما"
+
+msgid "خرید انواع آهن‌آلات، سنگ و مصالح ساختمانی با بهترین قیمت"
+msgstr "خرید انواع آهن‌آلات، سنگ و مصالح ساختمانی با بهترین قیمت"
+
+msgid "موجودی"
+msgstr "موجودی"
+
+msgid "قیمت"
+msgstr "قیمت"
+
+msgid "نام"
+msgstr "نام"
+
+msgid "پیام"
+msgstr "پیام"
+
+msgid "ارسال پیام"
+msgstr "ارسال پیام"
+
+msgid "نظرات کاربران"
+msgstr "نظرات کاربران"
+
+msgid "هنوز پیامی ثبت نشده است."
+msgstr "هنوز پیامی ثبت نشده است."
+
+msgid "پاسخ مدیریت"
+msgstr "پاسخ مدیریت"
+
+msgid "گفت:"
+msgstr "گفت:"

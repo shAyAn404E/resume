@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- متا تگ‌های سئو -->
+  <meta name="description" content="فروش انواع مصالح ساختمانی نقدی با بهترین قیمت و کیفیت. تماس بگیرید.">
+  <meta name="keywords" content="مصالح ساختمانی, خرید آهن, سنگ ساختمانی, فروش مصالح نقدی">
+  <meta name="robots" content="index, follow">
+
+  <title>{% block title %}فروش مصالح ساختمانی نقدی{% endblock %}</title>
+
+
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}?v=3">
+  <link rel="stylesheet" href="{% static 'css/gallery.css'%}?v=3">
+  <link rel="stylesheet" href="{% static 'css/error.css' %}?v=2">
+  <link rel="stylesheet" href="{% static 'css/order.css' %}?v=2">
+  <link rel="stylesheet" href="{% static 'css/store.css' %}?v=4">
+
+   <script src="{% static 'js/gallery.js' %}"></script>
+  <script src="{% static 'js/store.js' %}"></script>
+
+
+
+</head>
+
+<body>
+{% load i18n %}
+
+ <form action="{% url 'set_language' %}" method="post">
+  {% csrf_token %}
+  <input name="next" type="hidden" value="{{ request.path }}">
+  <select name="language" onchange="this.form.submit()">
+    <option value="fa" {% if LANGUAGE_CODE == 'fa' %}selected{% endif %}>فارسی</option>
+    <option value="en" {% if LANGUAGE_CODE == 'en' %}selected{% endif %}>English</option>
+    <option value="ar" {% if LANGUAGE_CODE == 'ar' %}selected{% endif %}>العربية</option>
+  </select>
+</form>
+
+
+  {% include 'components/header.html' %}
+
+  <!-- پیام‌ها -->
+  {% include 'components/messages.html' %}
+
+  <!-- محتوای اصلی -->
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
+
+  {% include 'components/footer.html' %}
+
+<div id="lightbox" class="lightbox-modal">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightbox-image" class="lightbox-content" src="" alt="تصویر بزرگ شده">
+</div>
+
+</body>
+</html>
