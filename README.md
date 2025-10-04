@@ -1,1 +1,5 @@
-Personal portfolio — ML, Django, Data Analysis, Telegram bot
+Personal portfolio —>
+ML todo
+Django = 2 
+Data Analysis = 1 
+Telegram bot todo
